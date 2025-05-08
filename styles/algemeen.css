@@ -64,6 +64,7 @@ main {
     gap: 1rem;
     margin: 1.75rem;
     height: 84vh;
+    overflow-y: scroll;
 
 
     section {
@@ -162,6 +163,8 @@ main {
 
                     p {
                         margin-top: .5rem;
+                        font-family: "Roboto Mono", monospace;
+                        text-align: start;
                     }
 
                 }
@@ -194,6 +197,7 @@ main {
                 grid-template-rows: auto auto;
                 grid-template-areas: "a1 b1" "a1 b2";
                 padding-top: 1rem;
+                column-gap: 2rem;
 
                 li:nth-of-type(1) {
                     grid-area: a1;
@@ -201,10 +205,15 @@ main {
                     flex-direction: column;
                     width: 100%;
                     gap: 1rem;
+
+                    h3 {
+                        margin-bottom: .5rem;
+                    }
                 }
 
                 li:nth-of-type(2) {
                     grid-area: b1;
+                    height: max-content;
 
                     img {
                         width: 15rem;
@@ -213,7 +222,11 @@ main {
                 }
 
                 li:nth-of-type(3) {
-                    grid-area: b2;
+                    grid-area: b1;
+                    padding-top: 16rem;
+                    max-width: 15rem;
+                    width: 100%;
+                    font-weight: 700;
                 }
             }
 
@@ -279,6 +292,7 @@ body:has(.weekly-nerd div:popover-open) footer {
 
     main {
         margin-bottom: 2.5rem;
+        overflow-y: hidden;
     }
 
     footer {
