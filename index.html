@@ -1,144 +1,237 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weekly Nerd</title>
-    <link href="styles/algemeen.css" rel="stylesheet">
-</head>
-<body>
+    <link href="styles/algemeen.css" rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <h1>Blog - Joost Locher</h1>
+      <h1>Blog - Joost Locher</h1>
     </header>
 
     <main>
-        <section>
-            <ul>
-                <li><label for="wn">Weekly Nerd
-                    <input type="radio" name="menu" id="wn" checked hidden>
-                </label></li>
-                <li><label for="doel">Leerdoelen
-                    <input type="radio" name="menu" id="doel" hidden>
-                </label></li>
-                <li><label for="hack">Hackathon
-                    <input type="radio" name="menu" id="hack" hidden>
-                </label></li>
-                <li><label for="reflectie">Reflectie
-                    <input type="radio" name="menu" id="reflectie" hidden>
-                </label></li>
-            </ul>
-        </section>
+      <section>
+        <ul>
+          <li>
+            <label for="wn"
+              >Weekly Nerd
+              <input type="radio" name="menu" id="wn" checked hidden />
+            </label>
+          </li>
+          <li>
+            <label for="doel"
+              >Leerdoelen
+              <input type="radio" name="menu" id="doel" hidden />
+            </label>
+          </li>
+          <li>
+            <label for="meesterproef-reflectie"
+              >Reflectie Meesterproef
+              <input
+                type="radio"
+                name="menu"
+                id="meesterproef-reflectie"
+                hidden
+              />
+            </label>
+          </li>
+          <li>
+            <label for="hack"
+              >Hackathon
+              <input type="radio" name="menu" id="hack" hidden />
+            </label>
+          </li>
+          <li>
+            <label for="reflectie"
+              >Tussen Reflectie
+              <input type="radio" name="menu" id="reflectie" hidden />
+            </label>
+          </li>
+        </ul>
+      </section>
 
-        <section class="weekly-nerd">
-            <h2>Weekly Nerd</h2>
-            <ul>
-                <li>
-                    <button popovertarget="kilian">
-                        <img src="images/kilian_valkhof.webp" alt="kilian valkhof">
-                        <p>Kilian Valkhof</p>
-                    </button>
-                </li>
-                <!-- <li>
+      <section class="weekly-nerd">
+        <h2>Weekly Nerd</h2>
+        <ul>
+          <li>
+            <button popovertarget="kilian">
+              <img src="images/kilian_valkhof.webp" alt="kilian valkhof" />
+              <p>Kilian Valkhof</p>
+            </button>
+          </li>
+          <!-- <li>
                     <button popovertarget="peter">
                         <img src="images/peter_paul_koch.webp" alt="peter paul_koch">
                         <p>Peter-Paul Koch</p>
                     </button>
                 </li> -->
-                <li>
-                    <button popovertarget="roel">
-                        <img src="images/roel_nieskens.webp" alt="roel nieskens">
-                        <p>Roel Nieskens</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="cassie">
-                        <img src="images/cassie_evans.webp" alt="cassie evans">
-                        <p>Cassie Evans</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="nils">
-                        <img src="images/nils_binder.webp" alt="nils binder">
-                        <p>Nils Binder</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="jeremy">
-                        <img src="images/jeremy_keith.webp" alt="jeremy keith">
-                        <p>Jeremy Keith</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="julia">
-                        <img src="images/julia_miocene.webp" alt="julia miocene">
-                        <p>Julia Miocene</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="rosa">
-                        <img src="images/Portrait_Placeholder.png" alt="Rosa Schuurmans">
-                        <p>Rosa Schuurmans</p>
-                    </button>
-                </li>
-                <!-- <li>
+          <li>
+            <button popovertarget="roel">
+              <img src="images/roel_nieskens.webp" alt="roel nieskens" />
+              <p>Roel Nieskens</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="cassie">
+              <img src="images/cassie_evans.webp" alt="cassie evans" />
+              <p>Cassie Evans</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="nils">
+              <img src="images/nils_binder.webp" alt="nils binder" />
+              <p>Nils Binder</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="jeremy">
+              <img src="images/jeremy_keith.webp" alt="jeremy keith" />
+              <p>Jeremy Keith</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="julia">
+              <img src="images/julia_miocene.webp" alt="julia miocene" />
+              <p>Julia Miocene</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="rosa">
+              <img
+                src="images/Portrait_Placeholder.png"
+                alt="Rosa Schuurmans"
+              />
+              <p>Rosa Schuurmans</p>
+            </button>
+          </li>
+          <!-- <li>
                     <button popovertarget="niels">
                         <img src="images/niels_leenheer.webp" alt="niels leenheer">
                         <p>Niels Leenheer</p>
                     </button>
                 </li> -->
-                <li>
-                    <button popovertarget="nienke">
-                        <img src="images/nienke_de_keijzer.webp" alt="nienke de_keijzer">
-                        <p>Nienke de Keijzer</p>
-                    </button>
-                </li>
-                <li>
-                    <button popovertarget="erik">
-                        <img src="images/erik_kroes.webp" alt="erik kroes">
-                        <p>Erik Kroes</p>
-                    </button>
-                </li>
-            </ul>
+          <li>
+            <button popovertarget="nienke">
+              <img
+                src="images/nienke_de_keijzer.webp"
+                alt="nienke de_keijzer"
+              />
+              <p>Nienke de Keijzer</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="erik">
+              <img src="images/erik_kroes.webp" alt="erik kroes" />
+              <p>Erik Kroes</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="dave">
+              <img src="images/dave_bitter.jpeg" alt="dave bitter" />
+              <p>IO Dave Bitter</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="steve">
+              <img src="images/steve_jonk.jpeg" alt="steve jonk" />
+              <p>IO Steve Jonk</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="clarke">
+              <img src="images/clarke_verdel.jpeg" alt="clarke verdel" />
+              <p>IO Clarke Verdel</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="johan">
+              <img src="images/johan_huijkman.png" alt="johan huijkman" />
+              <p>Q42 Johan Huijkman</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="marvin">
+              <img src="images/marvin_sernee.jpg" alt="marvin sernee" />
+              <p>Q42 Marvin Sernee</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="marieke">
+              <img src="images/marieke_hoop.png" alt="marieke de hoop" />
+              <p>Marieke de Hoop</p>
+            </button>
+          </li>
+          <li>
+            <button popovertarget="miriam">
+              <img src="images/miriam_suzanne.png" alt="miriam suzanne" />
+              <p>Miriam Suzanne</p>
+            </button>
+          </li>
+        </ul>
 
-            <div popover id="kilian">
-                <h2>Kilian Valkhof</h2>
+        <div popover id="kilian">
+          <h2>Kilian Valkhof</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>"Use the least powerful language suitable for a given purpose" oftewel: gebruik de minst krachtige oplossing die nog steeds werkt. Begin altijd met HTML, voeg alleen CSS toe als dat nodig is, en gebruik JavaScript pas als laatste redmiddel.
-                                <br><br>
-                                Minder krachtige oplossingen zijn vaak beter leesbaar, toegankelijker voor screenreaders, eenvoudiger te onderhouden én beter voor de prestaties.
-                                <br><br>
-                                Voorbeelden: gebruik een a-element in plaats van een button met JavaScript voor navigatie. Gebruik standaard form-elementen met appearance: none om ze visueel aan te passen, zonder hun functie te verliezen.
-                                <br><br>
-                                Handige technieken die langskwamen:
-                                - accent-color voor het stijlen van checkboxes en radio's <br>
-                                - scroll-margin-top om ruimte boven anchor targets te houden <br>
-                                - :target om automatisch een highlight toe te voegen aan het aangeklikte onderdeel <br>
-                                - @starting-style om het beginpunt van een animatie te bepalen <br>
-                                - :has() als een soort if-statement in CSS (bijvoorbeeld: een form met een checked input krijgt een andere stijl) <br>
-                                - ::picker() om select-dropdowns zelf te stylen (alleen in Chrome)
-                                <br><br>
-                                De boodschap: denk na over wat je écht nodig hebt — en begin altijd met de eenvoudigste oplossing.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Dit was de eerste Weekly Nerd die we hadden. Hij begon met veel dingen die we al kenden, waardoor het in het begin een beetje saai was.
-                             Maar al snel kwamen er nieuwe technieken uit de CSS-wereld aan bod. Ik heb hier uiteindelijk veel van geleerd, en technieken zoals :has() heb ik daarna ook regelmatig toegepast tijdens de vakken.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/kilian_valkhof.webp" alt="kilian valkhof">
-                    </li>
-                    <li>
-                        <p>The rule of least power</p>
-                    </li>
-                </ul>
-            </div>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  "Use the least powerful language suitable for a given purpose"
+                  oftewel: gebruik de minst krachtige oplossing die nog steeds
+                  werkt. Begin altijd met HTML, voeg alleen CSS toe als dat
+                  nodig is, en gebruik JavaScript pas als laatste redmiddel.
+                  <br /><br />
+                  Minder krachtige oplossingen zijn vaak beter leesbaar,
+                  toegankelijker voor screenreaders, eenvoudiger te onderhouden
+                  én beter voor de prestaties.
+                  <br /><br />
+                  Voorbeelden: gebruik een a-element in plaats van een button
+                  met JavaScript voor navigatie. Gebruik standaard
+                  form-elementen met appearance: none om ze visueel aan te
+                  passen, zonder hun functie te verliezen.
+                  <br /><br />
+                  Handige technieken die langskwamen: - accent-color voor het
+                  stijlen van checkboxes en radio's <br />
+                  - scroll-margin-top om ruimte boven anchor targets te houden
+                  <br />
+                  - :target om automatisch een highlight toe te voegen aan het
+                  aangeklikte onderdeel <br />
+                  - @starting-style om het beginpunt van een animatie te bepalen
+                  <br />
+                  - :has() als een soort if-statement in CSS (bijvoorbeeld: een
+                  form met een checked input krijgt een andere stijl) <br />
+                  - ::picker() om select-dropdowns zelf te stylen (alleen in
+                  Chrome)
+                  <br /><br />
+                  De boodschap: denk na over wat je écht nodig hebt — en begin
+                  altijd met de eenvoudigste oplossing.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Dit was de eerste Weekly Nerd die we hadden. Hij begon met
+                  veel dingen die we al kenden, waardoor het in het begin een
+                  beetje saai was. Maar al snel kwamen er nieuwe technieken uit
+                  de CSS-wereld aan bod. Ik heb hier uiteindelijk veel van
+                  geleerd, en technieken zoals :has() heb ik daarna ook
+                  regelmatig toegepast tijdens de vakken.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/kilian_valkhof.webp" alt="kilian valkhof" />
+            </li>
+            <li>
+              <p>The rule of least power</p>
+            </li>
+          </ul>
+        </div>
 
-            <!-- <div popover id="peter">
+        <!-- <div popover id="peter">
                 <h2>Peter-Paul Koch</h2>
 
                 <ul class="nerd-container">
@@ -165,219 +258,321 @@
                 </ul>
             </div> -->
 
-            <div popover id="roel">
-                <h2>Roel Nienkens</h2>
+        <div popover id="roel">
+          <h2>Roel Nienkens</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Een font is het digitale bestand dat bepaalt hoe letters eruitzien; een typeface is het ontwerp van een letterfamilie, zoals Helvetica.
-                                <br><br>
-                                Een glyph is de visuele vorm van een karakter — eenn letter kan meerdere glyphs hebben. Ligatures verbeteren de visuele samenhang. Kerning regelt de afstand tussen specifieke letterparen voor betere balans.
-                                <br><br>
-                                OpenType-features voegen extra typografische functies toe, zoals fractions (½), stylistic sets, tabular en oldstyle figures, small caps en swashes.
-                                <br><br>
-                                OpenType wordt breed ondersteund in browsers en maakt typografie krachtiger. Variable fonts combineren meerdere stijlen (gewicht, breedte, schuinte) in één bestand, wat zorgt voor snellere laadtijd en meer flexibiliteit in responsief ontwerp.
-                                <br><br>
-                                Roel Nieskens site voor var-fonts: https://wakamaifondue.com/
-                            </p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Wat fonts allemaal kunnen doen, was interessant om te zien — vooral hoeveel je met CSS kunt aanpassen, zeker bij het gebruik van variable fonts.
-                             Tijdens het vak CSS had ik ook een les van hem gevolgd waarin we leerden hoe we dit konden toepassen op ons project.
-                             Het zou goed zijn als er in de toekomst meer variable fonts beschikbaar komen en er meer kennis over gedeeld wordt. Ik wil hier in ieder geval verder naar gaan kijken en het toepassen in toekomstige projecten waar mogelijk.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/roel_nieskens.webp" alt="roel nieskens">
-                    </li>
-                    <li>
-                        <p>Typography</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="cassie">
-                <h2>Cassie Evans</h2>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Een font is het digitale bestand dat bepaalt hoe letters
+                  eruitzien; een typeface is het ontwerp van een letterfamilie,
+                  zoals Helvetica. <br /><br />
+                  Een glyph is de visuele vorm van een karakter — eenn letter
+                  kan meerdere glyphs hebben. Ligatures verbeteren de visuele
+                  samenhang. Kerning regelt de afstand tussen specifieke
+                  letterparen voor betere balans.
+                  <br /><br />
+                  OpenType-features voegen extra typografische functies toe,
+                  zoals fractions (½), stylistic sets, tabular en oldstyle
+                  figures, small caps en swashes.
+                  <br /><br />
+                  OpenType wordt breed ondersteund in browsers en maakt
+                  typografie krachtiger. Variable fonts combineren meerdere
+                  stijlen (gewicht, breedte, schuinte) in één bestand, wat zorgt
+                  voor snellere laadtijd en meer flexibiliteit in responsief
+                  ontwerp.
+                  <br /><br />
+                  Roel Nieskens site voor var-fonts: https://wakamaifondue.com/
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Wat fonts allemaal kunnen doen, was interessant om te zien —
+                  vooral hoeveel je met CSS kunt aanpassen, zeker bij het
+                  gebruik van variable fonts. Tijdens het vak CSS had ik ook een
+                  les van hem gevolgd waarin we leerden hoe we dit konden
+                  toepassen op ons project. Het zou goed zijn als er in de
+                  toekomst meer variable fonts beschikbaar komen en er meer
+                  kennis over gedeeld wordt. Ik wil hier in ieder geval verder
+                  naar gaan kijken en het toepassen in toekomstige projecten
+                  waar mogelijk.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/roel_nieskens.webp" alt="roel nieskens" />
+            </li>
+            <li>
+              <p>Typography</p>
+            </li>
+          </ul>
+        </div>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>GSAP is een krachtige JavaScript-animatiebibliotheek waarmee je alles kunt animeren op het web.<br><br>
-                                Basis: tween = één animatie, timeline = meerdere na elkaar.<br><br>
-                                Plugins: ScrollTrigger (scroll-animaties), ScrollSmoother (vloeiend scrollen), MotionPathHelper (bewegingspaden).<br><br>
-                                Utils: random (willekeurige waarde), wrap (herhalen), mapRange (waarden vertalen), pipe (functies koppelen), snap (afronden).<br><br>
-                                Efficiëntie: quickSetter & quickTo voor snelle updates zoals cursor-volgers.<br><br>
-                                Responsief: matchMedia voor animaties per schermformaat.<br><br>
-                                Controle: play, pause, reverse, restart en addPause voor interactiemomenten.<br><br>
-                                Toegankelijkheid: houd rekening met motion-reduction, gebruik ease: rough voor alternatief yoyo-effect.<br><br>
-                                Cassie's tip: quick hover animatie klaarzetten, pas starten bij interactie.</p>
-                                
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Het was leuk om te zien wat je allemaal kunt doen met een JavaScript-library zoals GSAP voor animaties. Zelf had ik hier nog nooit mee gewerkt en ik ben sowieso niet zo van de JavaScript.
-                             Deze Weekly Nerd viel ook samen met het vak CSS, waar dit juist een beetje tegenover staat. Toch denk ik dat ik hier in de toekomst zeker nog eens mee wil experimenteren in een apart project, om mijn skills te verbreden.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/cassie_evans.webp" alt="cassie evans">
-                    </li>
-                    <li>
-                        <p>GSAP - Beyond tweening</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="nils">
-                <h2>Nils Binder</h2>
+        <div popover id="cassie">
+          <h2>Cassie Evans</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Front-end designer uit Duitsland, werkzaam bij 9elements.
-                                Achtergrond in communicatieontwerp, productontwikkeling en CSS-architectuur.
-                                Zoekt de balans tussen design en development, stuurt een team aan binnen een digitaal bureau.
-                                <br><br>
-                                Werkt flexibel en schaalbaar, geen pixel-perfect ontwerp.
-                                Gebruik van moderne CSS-functies: min(), max(), clamp(), margin-inline.
-                                Voorbeeld: width: min(100% - 3rem, 75rem); met automatische centrering via margin-inline: auto.
-                                <br><br>
-                                Figma als tool: sluit goed aan bij CSS-denken door gebruik van px, %, rem.
-                                Consistent gebruik van eenheden verbetert samenwerking tussen ontwerp en code.
-                                <br><br>
-                                Responsieve eenheden: vw, vh, vmin, vmax (viewport) en qi, qb, qmin, qmax (containers).
-                                Maakt layouts adaptief voor elk schermformaat.
-                                <br><br>
-                                Whitespace is essentieel: niet verspild, maar functioneel voor rust en leesbaarheid.
-                                Flexibel ontwerpen = ontwerpen voor verandering.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Sommige dingen die hij vertelde kende ik al, zonder er echt bij stil te staan. Maar Nils maakte goed duidelijk waarom deze technieken zo waardevol zijn.
-                             Ik heb tijdens de vakken af en toe al gebruikgemaakt van functies zoals clamp, maar ik zou dit vaker kunnen toepassen — bijvoorbeeld ook met qi, qmin en qmax voor containers.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/nils_binder.webp" alt="nils binder">
-                    </li>
-                    <li>
-                        <p>Design for Flexibility</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="jeremy">
-                <h2>Jeremy Keith</h2>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  GSAP is een krachtige JavaScript-animatiebibliotheek waarmee
+                  je alles kunt animeren op het web.<br /><br />
+                  Basis: tween = één animatie, timeline = meerdere na elkaar.<br /><br />
+                  Plugins: ScrollTrigger (scroll-animaties), ScrollSmoother
+                  (vloeiend scrollen), MotionPathHelper (bewegingspaden).<br /><br />
+                  Utils: random (willekeurige waarde), wrap (herhalen), mapRange
+                  (waarden vertalen), pipe (functies koppelen), snap
+                  (afronden).<br /><br />
+                  Efficiëntie: quickSetter & quickTo voor snelle updates zoals
+                  cursor-volgers.<br /><br />
+                  Responsief: matchMedia voor animaties per schermformaat.<br /><br />
+                  Controle: play, pause, reverse, restart en addPause voor
+                  interactiemomenten.<br /><br />
+                  Toegankelijkheid: houd rekening met motion-reduction, gebruik
+                  ease: rough voor alternatief yoyo-effect.<br /><br />
+                  Cassie's tip: quick hover animatie klaarzetten, pas starten
+                  bij interactie.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Het was leuk om te zien wat je allemaal kunt doen met een
+                  JavaScript-library zoals GSAP voor animaties. Zelf had ik hier
+                  nog nooit mee gewerkt en ik ben sowieso niet zo van de
+                  JavaScript. Deze Weekly Nerd viel ook samen met het vak CSS,
+                  waar dit juist een beetje tegenover staat. Toch denk ik dat ik
+                  hier in de toekomst zeker nog eens mee wil experimenteren in
+                  een apart project, om mijn skills te verbreden.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/cassie_evans.webp" alt="cassie evans" />
+            </li>
+            <li>
+              <p>GSAP - Beyond tweening</p>
+            </li>
+          </ul>
+        </div>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Imperative programming beschrijft stap voor stap wat er moet gebeuren, zoals in JavaScript. Dit geeft veel controle, maar is foutgevoeliger. Declarative programming richt zich op wat je wilt bereiken, zoals in HTML en CSS, waarbij de browser de uitvoering regelt.
-                                <br><br>
-                                Gebruik JavaScript alleen moet waar het echt nodig is. Bijvoorbeeld: gebruik een echte button, geen div met JS.
-                                <br><br>
-                                In design draait declaratief denken om systemen en regels, zoals een hoverkleur die altijd iets donkerder is. Imperatief denken focust op precieze uitkomsten.
-                                <br><br>
-                                Tools zoals utopia.fyi en every-layout.dev ondersteunen een declaratieve aanpak. CSS-functies als clamp(), calc() en padding-inline-start helpen bij flexibele, schaalbare ontwerpen.
-                                <br><br>
-                                Tot slot: denk na over hoe je denkt. In- en uitzoomen (analytisch en systeemdenken) zijn beide nodig in design en development.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Hij liet me goed nadenken over wat voor persoon ik zelf ben en wat voor soort bedrijf ik later moet gaan zoeken. Zelf neig ik meer naar de declaratieve kant,
-                                 maar het is soms ook juist goed om imperatief te werk te gaan om meer controle te hebben en de code duidelijker te maken. Ik moet dit echter eerst op de werkvloer ervaren voordat ik hier definitief een keuze in kan maken.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/jeremy_keith.webp" alt="jeremy keith">
-                    </li>
-                    <li>
-                        <p>Imperative vs. Declarative Design </p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="julia">
-                <h2>Julia Miocene</h2>
+        <div popover id="nils">
+          <h2>Nils Binder</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>UX Engineer bij GitLab, actief in het UX Paper Cuts-team.
-                                Google Developer Expert en Women Techmakers Ambassador.
-                                Bekend om complexe animaties en illustraties met alleen CSS — populair op CodePen.
-                                <br><br>
-                                Laat zien dat CSS meer is dan alleen styling: tekenen en animeren zonder JS of SVG.
-                                Alles opgebouwd uit divs of andere elementen voor de delen van een lichaam.
-                                Werkt met parent-child-structuren en gebruikt pseudo-elementen ::before en ::after.
-                                <br><br>
-                                Position relative en absolute voor nauwkeurige plaatsing van onderdelen.
-                                Transform, rotate, scale, translate voor beweging en vorm.
-                                Transform-origin bepaalt het draaipunt van animaties, bijvoorbeeld bottom center voor armen.
-                                <br><br>
-                                Clip-path, border-radius en gradients voor vormen en effecten.
-                                Maakt gebruik van CSS-hacks zoals driehoeken met borders en schaduwen voor diepte.
-                                <br><br>
-                                Toonde tijdens de presentatie verschillende voorbeelden van haar werk inclusief de bijbehorende code.
-                                Website bevat handige tips en inspiratie voor creatieve toepassingen van CSS.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Ik vond Julia's werk heel tof! Toevallig had ik voor de Weekly Nerd al een video van haar gezien op YouTube, die ze ook in haar presentatie had verwerkt.
-                             Later heb ik een andere video van haar kunnen gebruiken voor het vak CSS, waarmee ik mijn console in 3D kon stijlen.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/julia_miocene.webp" alt="julia miocene">
-                    </li>
-                    <li>
-                        <p>CSS Character Animations</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="rosa">
-                <h2>Rosa Schuurmans</h2>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Front-end designer uit Duitsland, werkzaam bij 9elements.
+                  Achtergrond in communicatieontwerp, productontwikkeling en
+                  CSS-architectuur. Zoekt de balans tussen design en
+                  development, stuurt een team aan binnen een digitaal bureau.
+                  <br /><br />
+                  Werkt flexibel en schaalbaar, geen pixel-perfect ontwerp.
+                  Gebruik van moderne CSS-functies: min(), max(), clamp(),
+                  margin-inline. Voorbeeld: width: min(100% - 3rem, 75rem); met
+                  automatische centrering via margin-inline: auto.
+                  <br /><br />
+                  Figma als tool: sluit goed aan bij CSS-denken door gebruik van
+                  px, %, rem. Consistent gebruik van eenheden verbetert
+                  samenwerking tussen ontwerp en code.
+                  <br /><br />
+                  Responsieve eenheden: vw, vh, vmin, vmax (viewport) en qi, qb,
+                  qmin, qmax (containers). Maakt layouts adaptief voor elk
+                  schermformaat.
+                  <br /><br />
+                  Whitespace is essentieel: niet verspild, maar functioneel voor
+                  rust en leesbaarheid. Flexibel ontwerpen = ontwerpen voor
+                  verandering.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Sommige dingen die hij vertelde kende ik al, zonder er echt
+                  bij stil te staan. Maar Nils maakte goed duidelijk waarom deze
+                  technieken zo waardevol zijn. Ik heb tijdens de vakken af en
+                  toe al gebruikgemaakt van functies zoals clamp, maar ik zou
+                  dit vaker kunnen toepassen — bijvoorbeeld ook met qi, qmin en
+                  qmax voor containers.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/nils_binder.webp" alt="nils binder" />
+            </li>
+            <li>
+              <p>Design for Flexibility</p>
+            </li>
+          </ul>
+        </div>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Oud CMD-student met een technische en creatieve hacker-mentaliteit, gericht op onafhankelijk werken en zelf dingen maken.
-                                <br><br>
-                                DIY-benadering staat centraal: zelf onderzoeken, bouwen, slopen en leren zonder afhankelijk te zijn van grote platformen.
-                                <br><br>
-                                Werkt platform-agnostisch, dus zonder voorkeur voor merken of systemen. Bouwt eigen CMS, draait eigen servers en kiest bewust voor open source tools.
-                                <br><br>
-                                Gebruikt Bash voor automatisering en bewerking via de terminal, en ImageMagick als alternatief voor Photoshop.
-                                <br><br>
-                                Focust op projecten rond e-waste, audiohacking, livesets en workshops. Experimenteert bewust met rauwe en ongebruikelijke geluiden via kabels en mixers.
-                                <br><br>
-                                Haar manier van leren is praktisch: “Keep It Simple, Stupid” en “Learn by Trying” zijn leidende principes.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Zelf had ik niet heel veel met dit onderwerp. Voor CMD heb ik een jaar Product Design gedaan, waar je vaak producten uit elkaar haalt en onderzoekt waar ze uit bestaan en hoe je die kennis kunt toepassen.
-                             Toch heb ik zelf niet zoveel met fysieke ontwerpen en de techniek daarachter. Wel zie ik dat je deze aanpak ook op code kunt toepassen, door goed te kijken waar onderdelen uit bestaan en hoe je ze kunt hergebruiken.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/Portrait_Placeholder.png" alt="rosa schuurmans">
-                    </li>
-                    <li>
-                        <p>Circuit Bending</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- <div popover id="niels">
+        <div popover id="jeremy">
+          <h2>Jeremy Keith</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Imperative programming beschrijft stap voor stap wat er moet
+                  gebeuren, zoals in JavaScript. Dit geeft veel controle, maar
+                  is foutgevoeliger. Declarative programming richt zich op wat
+                  je wilt bereiken, zoals in HTML en CSS, waarbij de browser de
+                  uitvoering regelt. <br /><br />
+                  Gebruik JavaScript alleen moet waar het echt nodig is.
+                  Bijvoorbeeld: gebruik een echte button, geen div met JS.
+                  <br /><br />
+                  In design draait declaratief denken om systemen en regels,
+                  zoals een hoverkleur die altijd iets donkerder is. Imperatief
+                  denken focust op precieze uitkomsten.
+                  <br /><br />
+                  Tools zoals utopia.fyi en every-layout.dev ondersteunen een
+                  declaratieve aanpak. CSS-functies als clamp(), calc() en
+                  padding-inline-start helpen bij flexibele, schaalbare
+                  ontwerpen.
+                  <br /><br />
+                  Tot slot: denk na over hoe je denkt. In- en uitzoomen
+                  (analytisch en systeemdenken) zijn beide nodig in design en
+                  development.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Hij liet me goed nadenken over wat voor persoon ik zelf ben en
+                  wat voor soort bedrijf ik later moet gaan zoeken. Zelf neig ik
+                  meer naar de declaratieve kant, maar het is soms ook juist
+                  goed om imperatief te werk te gaan om meer controle te hebben
+                  en de code duidelijker te maken. Ik moet dit echter eerst op
+                  de werkvloer ervaren voordat ik hier definitief een keuze in
+                  kan maken.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/jeremy_keith.webp" alt="jeremy keith" />
+            </li>
+            <li>
+              <p>Imperative vs. Declarative Design</p>
+            </li>
+          </ul>
+        </div>
+
+        <div popover id="julia">
+          <h2>Julia Miocene</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  UX Engineer bij GitLab, actief in het UX Paper Cuts-team.
+                  Google Developer Expert en Women Techmakers Ambassador. Bekend
+                  om complexe animaties en illustraties met alleen CSS —
+                  populair op CodePen. <br /><br />
+                  Laat zien dat CSS meer is dan alleen styling: tekenen en
+                  animeren zonder JS of SVG. Alles opgebouwd uit divs of andere
+                  elementen voor de delen van een lichaam. Werkt met
+                  parent-child-structuren en gebruikt pseudo-elementen ::before
+                  en ::after.
+                  <br /><br />
+                  Position relative en absolute voor nauwkeurige plaatsing van
+                  onderdelen. Transform, rotate, scale, translate voor beweging
+                  en vorm. Transform-origin bepaalt het draaipunt van animaties,
+                  bijvoorbeeld bottom center voor armen.
+                  <br /><br />
+                  Clip-path, border-radius en gradients voor vormen en effecten.
+                  Maakt gebruik van CSS-hacks zoals driehoeken met borders en
+                  schaduwen voor diepte.
+                  <br /><br />
+                  Toonde tijdens de presentatie verschillende voorbeelden van
+                  haar werk inclusief de bijbehorende code. Website bevat
+                  handige tips en inspiratie voor creatieve toepassingen van
+                  CSS.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Ik vond Julia's werk heel tof! Toevallig had ik voor de Weekly
+                  Nerd al een video van haar gezien op YouTube, die ze ook in
+                  haar presentatie had verwerkt. Later heb ik een andere video
+                  van haar kunnen gebruiken voor het vak CSS, waarmee ik mijn
+                  console in 3D kon stijlen.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/julia_miocene.webp" alt="julia miocene" />
+            </li>
+            <li>
+              <p>CSS Character Animations</p>
+            </li>
+          </ul>
+        </div>
+
+        <div popover id="rosa">
+          <h2>Rosa Schuurmans</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Oud CMD-student met een technische en creatieve
+                  hacker-mentaliteit, gericht op onafhankelijk werken en zelf
+                  dingen maken. <br /><br />
+                  DIY-benadering staat centraal: zelf onderzoeken, bouwen,
+                  slopen en leren zonder afhankelijk te zijn van grote
+                  platformen.
+                  <br /><br />
+                  Werkt platform-agnostisch, dus zonder voorkeur voor merken of
+                  systemen. Bouwt eigen CMS, draait eigen servers en kiest
+                  bewust voor open source tools.
+                  <br /><br />
+                  Gebruikt Bash voor automatisering en bewerking via de
+                  terminal, en ImageMagick als alternatief voor Photoshop.
+                  <br /><br />
+                  Focust op projecten rond e-waste, audiohacking, livesets en
+                  workshops. Experimenteert bewust met rauwe en ongebruikelijke
+                  geluiden via kabels en mixers.
+                  <br /><br />
+                  Haar manier van leren is praktisch: “Keep It Simple, Stupid”
+                  en “Learn by Trying” zijn leidende principes.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Zelf had ik niet heel veel met dit onderwerp. Voor CMD heb ik
+                  een jaar Product Design gedaan, waar je vaak producten uit
+                  elkaar haalt en onderzoekt waar ze uit bestaan en hoe je die
+                  kennis kunt toepassen. Toch heb ik zelf niet zoveel met
+                  fysieke ontwerpen en de techniek daarachter. Wel zie ik dat je
+                  deze aanpak ook op code kunt toepassen, door goed te kijken
+                  waar onderdelen uit bestaan en hoe je ze kunt hergebruiken.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="images/Portrait_Placeholder.png"
+                alt="rosa schuurmans"
+              />
+            </li>
+            <li>
+              <p>Circuit Bending</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div popover id="niels">
                 <h2>Niels Leenheer</h2>
 
                 <ul class="nerd-container">
@@ -403,155 +598,431 @@
                     </li>
                 </ul>
             </div> -->
-            
-            <div popover id="nienke">
-                <h2>Nienke de Keijzer</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Nienke de Keijzer onderzocht tijdens haar afstudeerproject de toegankelijkheid van de GVB-app. Ze ontdekte dat de app voor veel mensen met een beperking niet goed bruikbaar was.
-                                <br><br>
-                                In plaats van alleen te kijken naar regels, legde ze de focus op echte gebruikerservaringen. Ze betrok mensen met beperkingen actief bij het ontwerp- en testproces, wat leidde tot waardevolle inzichten.
-                                <br><br>
-                                Met kleine aanpassingen, zoals beter kleurcontrast, duidelijke navigatie en leesbare tekstgroottes, maakte ze de app een stuk gebruiksvriendelijker. Dit resulteerde in een toegankelijker herontwerp.
-                                <br><br>
-                                Haar aanpak maakte indruk: GVB nam haar aanbevelingen over en bood haar uiteindelijk een baan aan. Dit laat zien dat toegankelijk ontwerpen niet alleen om regels gaat, maar vooral om échte bruikbaarheid voor iedereen.
-                                <br><br>
-                                Toegankelijkheid begint bij het ontwerp. Denk vanaf het begin na over gebruiksgemak, test met diverse gebruikers en maak gebruik van semantische HTML. Kleine stappen maken al een groot verschil.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Dit was wel even schrikken: hoe weinig tot niets een groot bedrijf als GVB in accessibility investeert. Zeker als het een bedrijf is dat juist voor iedereen toegankelijk zou moeten zijn. Nienke maakte ook duidelijk dat veel testen echt een must is en dat daar veel nieuwe inzichten uit komen. Dit heb ik zelf ook ervaren bij HCD.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/nienke_de_keijzer.webp" alt="nienke de keijzer">
-                    </li>
-                    <li>
-                        <p>Accessibility for GVB</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div popover id="erik">
-                <h2>Erik Kroes</h2>
+        <div popover id="nienke">
+          <h2>Nienke de Keijzer</h2>
 
-                <ul class="nerd-container">
-                    <li>
-                        <div>
-                            <h3>Samenvatting</h3>
-                            <p>Toegankelijkheid gaat over ervoor zorgen dat iedereen je website kan gebruiken, ook mensen met een beperking. Kleine aanpassingen kunnen al veel verschil maken.
-                                <br><br>
-                                Goede HTML is de basis. Gebruik semantische elementen zoals button, a, nav en vermijd het gebruiken van divs voor interactieve elementen.
-                                <br><br>
-                                Voor de keyboard zijn veelvoorkomende problemen: geen skip link, foutieve focus states, lage kleurcontrasten en onduidelijke placeholders. Labels horen boven inputvelden te staan.
-                                <br><br>
-                                Contrast is belangrijk, zeker in fel licht. Voor gewone tekst is minimaal 4.5:1 nodig, voor grote tekst 3:1.
-                                <br><br>
-                                Alternatieven zoals captions, transcripts en goede alt-teksten maken content toegankelijker. Let ook op afbeeldingen in buttons en video’s zonder ondertiteling.
-                                <br><br>
-                                Test niet alleen met tools, maar ook met het toetsenbord en een screenreader. Zorg dat je site werkt op kleine schermen en dat tekst schaalbaar is.
-                                <br><br>
-                                Je kunt veel bereiken zonder JavaScript, als je HTML en CSS slim inzet.</p>
-                        </div>
-                        <div>
-                            <h3>Mening</h3>
-                            <p>Heel veel van deze informatie die hij had vertelde wist ik al, wat natuurlijk heel goed is dat wij dat al hebben geleerd en kunnen toepassen.
-                                Maar er zijn nogsteeds veel mensen die hiervan kunnen leren, en altijd goed bij elk project hier wat tijd in te steken. Ik hoop dit dan ook voor de Meesterproef te doen.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/erik_kroes.webp" alt="erik kroes">
-                    </li>
-                    <li>
-                        <p>WCAG - Accessibility Fixes</p>
-                    </li>
-                </ul>
-            </div>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Nienke de Keijzer onderzocht tijdens haar afstudeerproject de
+                  toegankelijkheid van de GVB-app. Ze ontdekte dat de app voor
+                  veel mensen met een beperking niet goed bruikbaar was.
+                  <br /><br />
+                  In plaats van alleen te kijken naar regels, legde ze de focus
+                  op echte gebruikerservaringen. Ze betrok mensen met
+                  beperkingen actief bij het ontwerp- en testproces, wat leidde
+                  tot waardevolle inzichten.
+                  <br /><br />
+                  Met kleine aanpassingen, zoals beter kleurcontrast, duidelijke
+                  navigatie en leesbare tekstgroottes, maakte ze de app een stuk
+                  gebruiksvriendelijker. Dit resulteerde in een toegankelijker
+                  herontwerp.
+                  <br /><br />
+                  Haar aanpak maakte indruk: GVB nam haar aanbevelingen over en
+                  bood haar uiteindelijk een baan aan. Dit laat zien dat
+                  toegankelijk ontwerpen niet alleen om regels gaat, maar vooral
+                  om échte bruikbaarheid voor iedereen.
+                  <br /><br />
+                  Toegankelijkheid begint bij het ontwerp. Denk vanaf het begin
+                  na over gebruiksgemak, test met diverse gebruikers en maak
+                  gebruik van semantische HTML. Kleine stappen maken al een
+                  groot verschil.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Dit was wel even schrikken: hoe weinig tot niets een groot
+                  bedrijf als GVB in accessibility investeert. Zeker als het een
+                  bedrijf is dat juist voor iedereen toegankelijk zou moeten
+                  zijn. Nienke maakte ook duidelijk dat veel testen echt een
+                  must is en dat daar veel nieuwe inzichten uit komen. Dit heb
+                  ik zelf ook ervaren bij HCD.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="images/nienke_de_keijzer.webp"
+                alt="nienke de keijzer"
+              />
+            </li>
+            <li>
+              <p>Accessibility for GVB</p>
+            </li>
+          </ul>
+        </div>
 
-        </section>
+        <div popover id="dave">
+          <h2>Dave Bitter</h2>
 
-        <section class="doelen">
-            <h2>Leerdoelen</h2>
-            <div>
-                <h3>- Gestructureerd en professioneel werken</h3>
-                <p>Ik wil tijdens het project overzichtelijk en netjes te werk gaan, zodat de samenwerking met het team beter verloopt en de code begrijpelijk blijft.</p>
-                <strong>Aanpak:</strong>
-                <ul>
-                    <li>Duidelijke afspraken maken over code opbouw en structuur. (codeconventions)</li>
-                    <li>Github gebruiken voor planning via Projects en Issues.</li>
-                    <li>Branches per features, met duidelijke commit messages.</li>
-                    <li>Regelmatig overleggen met het team of alles nog goed verloopt.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>- JavaScript beter begrijpen en bewust gebruiken</h3>
-                <p>Ik gebruik nu regelmatig AI voor JavaScript, maar wil daar minder afhankelijk van worden. Door zelf code te schrijven en te begrijpen wat ik doe, wil ik leren om mijn code eenvoudiger, overzichtelijker en doelgerichter te houden.</p>
-                <strong>Aanpak:</strong>
-                <ul>
-                    <li>Eerst zelf schrijven, zonder AI.</li>
-                    <li>Bij elke regel nagaan of die echt nodig is of eenvoudiger kan.</li>
-                    <li>AI alleen inzetten als laatste stap, of voor gerichte uitleg/hulp.</li>
-                    <li>Korte notities toevoegen om te checken of ik het zelf begrijp.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>- Animeren met GSAP</h3>
-                <p>Ik wil GSAP graag leren en kijken of ik het op een goede manier kan toepassen in mijn meesterproef. Als dat niet lukt, verwerk ik het in mijn Weekly Nerd om er toch mee te oefenen.</p>
-                <strong>Aanpak:</strong>
-                <ul>
-                    <li>Oefenen met verschillende GSAP-features.</li>
-                    <li>Bij elke animatie nagaan of het ook met CSS kan, en dit bijhouden in een documentje.</li>
-                    <li>Rekening houden met performance en interactie.</li>
-                    <li>Animaties gestructureerd opbouwen en overzichtelijk houden.</li>
-                </ul>
-            </div>
-            <!-- <p>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/dave_bitter.jpeg" alt="dave bitter" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+
+        <div popover id="steve">
+          <h2>Steve Jonk</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/steve_jonk.jpeg" alt="steve jonk" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+
+        <div popover id="clarke">
+          <h2>Clarke Verdel</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/clarke_verdel.jpeg" alt="clarke verdel" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+
+        <div popover id="johan">
+          <h2>Johan Huijkman</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/johan_huijkman.png" alt="johan huijkman" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+        <div popover id="marvin">
+          <h2>Marvin Sernee</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/marvin_sernee.jpg" alt="marvin sernee" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+        <div popover id="marieke">
+          <h2>Marieke de Hoop</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/marieke_hoop.png" alt="marieke de hoop" />
+            </li>
+            <li>
+              <p>...</p>
+            </li>
+          </ul>
+        </div>
+        <div popover id="miriam">
+          <h2>Miriam Suzanne</h2>
+
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  ...
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/miriam_suzanne.png" alt="miriam suzanne" />
+            </li>
+            <li>
+              <p>..</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="doelen">
+        <h2>Leerdoelen</h2>
+        <div>
+          <h3>- Gestructureerd en professioneel werken</h3>
+          <p>
+            Ik wil tijdens het project overzichtelijk en netjes te werk gaan,
+            zodat de samenwerking met het team beter verloopt en de code
+            begrijpelijk blijft.
+          </p>
+          <strong>Aanpak:</strong>
+          <ul>
+            <li>
+              Duidelijke afspraken maken over code opbouw en structuur.
+              (codeconventions)
+            </li>
+            <li>Github gebruiken voor planning via Projects en Issues.</li>
+            <li>Branches per features, met duidelijke commit messages.</li>
+            <li>
+              Regelmatig overleggen met het team of alles nog goed verloopt.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>- JavaScript beter begrijpen en bewust gebruiken</h3>
+          <p>
+            Ik gebruik nu regelmatig AI voor JavaScript, maar wil daar minder
+            afhankelijk van worden. Door zelf code te schrijven en te begrijpen
+            wat ik doe, wil ik leren om mijn code eenvoudiger, overzichtelijker
+            en doelgerichter te houden.
+          </p>
+          <strong>Aanpak:</strong>
+          <ul>
+            <li>Eerst zelf schrijven, zonder AI.</li>
+            <li>
+              Bij elke regel nagaan of die echt nodig is of eenvoudiger kan.
+            </li>
+            <li>
+              AI alleen inzetten als laatste stap, of voor gerichte uitleg/hulp.
+            </li>
+            <li>
+              Korte notities toevoegen om te checken of ik het zelf begrijp.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>- Animeren met GSAP</h3>
+          <p>
+            Ik wil GSAP graag leren en kijken of ik het op een goede manier kan
+            toepassen in mijn meesterproef. Als dat niet lukt, verwerk ik het in
+            mijn Weekly Nerd om er toch mee te oefenen.
+          </p>
+          <strong>Aanpak:</strong>
+          <ul>
+            <li>Oefenen met verschillende GSAP-features.</li>
+            <li>
+              Bij elke animatie nagaan of het ook met CSS kan, en dit bijhouden
+              in een documentje.
+            </li>
+            <li>Rekening houden met performance en interactie.</li>
+            <li>Animaties gestructureerd opbouwen en overzichtelijk houden.</li>
+          </ul>
+        </div>
+        <!-- <p>
                 -Ik wil leren om nog gestructureerder en duidelijker te werk te gaan. Ik merk dat ik soms de neiging heb om alles door elkaar te zetten, waardoor ik code dubbel schrijf of fouten krijg door verkeerde nesting of CSS-specificity. Tijdens de meesterproef wil ik hier dan ook extra op focussen. Zeker omdat we in groepsverband werken, kan dit snel voor problemen zorgen. Ik zou hierin graag een actieve rol binnen het team opnemen, door hier bewust aandacht aan te besteden en duidelijke afspraken over de structuur van de code te maken.<br>
                 <br>
                 -Ik wil een beter begrip krijgen van JavaScript en leren wanneer het echt nodig is om het toe te passen. Daarbij wil ik minder afhankelijk worden van AI-hulp, zodat ik zelf beter kan beoordelen of een bepaalde oplossing eenvoudiger kan worden opgebouwd. Ook wil ik beter kunnen inschatten of iets met JavaScript moet worden opgelost, of dat het ook met puur HTML en CSS mogelijk is.<br>
                 <br>
                 -Professioneel documenteren, zowel in de code als in de README. Door wijzigingen direct bij te houden per onderdeel of dag, wil ik up-to-date blijven en tegelijkertijd het overzichtelijker maken voor het team.
             </p> -->
-        </section>
-        
-        <section class="hackathon">
-            <h2>Hackathon</h2>
-            <p>Women's World Wide Web is een lofuiting aan alle vrouwen in de tech. Samen met Lisa en Lauren heb ik in drie dagen een mooi eindproduct neergezet.
-                 We hebben hiervoor een wereldbol gemaakt met daarin CodePens van het werk van deze vrouwen. Rondom de wereld draaien afbeeldingen van hen in een animatie.
-                  Die animatie heb ik gemaakt met behulp van keyframes en transform: translate. Ik had ook geprobeerd om via de sibling index een delay tussen de afbeeldingen toe te passen, maar dat is niet gelukt.<br>
-                  <br>
-                Het teamwork verliep zeer goed: we konden elkaar versterken, goed helpen en het was duidelijk wie welke taak had. We verdeelden het werk efficiënt.<br>
-                <br>
-                Ik ben erg trots op wat we in drie dagen hebben kunnen neerzetten, zeker met alle nieuwe technieken die we hebben geleerd en toegepast, zoals customizable selects, anchor positioning en carousel snap.</p>
-            <img src="images/wwww.png" alt="">
-        </section>
+      </section>
 
-        <section class="reflectie">
-            <h2>Reflectie</h2>
-            <h3>Hoe gaat het tot nu toe</h3>
-            <p>
-                Tijdens de minor ben ik tot nu toe al enorm gegroeid. Ik zie veel vooruitgang in hoe snel ik nieuwe technieken oppak en deze kan toepassen in mijn projecten.
-                Zo heb ik mijn doel om 3D in web development toe te passen op meerdere manieren kunnen realiseren. Ook heb ik meer inzicht gekregen in waar ik nu sta en welke vaardigheden ik inmiddels beheers.
-            </p>
+      <section class="hackathon">
+        <h2>Hackathon</h2>
+        <p>
+          Women's World Wide Web is een lofuiting aan alle vrouwen in de tech.
+          Samen met Lisa en Lauren heb ik in drie dagen een mooi eindproduct
+          neergezet. We hebben hiervoor een wereldbol gemaakt met daarin
+          CodePens van het werk van deze vrouwen. Rondom de wereld draaien
+          afbeeldingen van hen in een animatie. Die animatie heb ik gemaakt met
+          behulp van keyframes en transform: translate. Ik had ook geprobeerd om
+          via de sibling index een delay tussen de afbeeldingen toe te passen,
+          maar dat is niet gelukt.<br />
+          <br />
+          Het teamwork verliep zeer goed: we konden elkaar versterken, goed
+          helpen en het was duidelijk wie welke taak had. We verdeelden het werk
+          efficiënt.<br />
+          <br />
+          Ik ben erg trots op wat we in drie dagen hebben kunnen neerzetten,
+          zeker met alle nieuwe technieken die we hebben geleerd en toegepast,
+          zoals customizable selects, anchor positioning en carousel snap.
+        </p>
+        <img src="images/wwww.png" alt="" />
+      </section>
 
-            <h3>Mijn leermomenten</h3>
-            <p>
-                Mijn grootste leermoment was hoe goed samenwerking kan verlopen als je vanaf het begin georganiseerd werkt. Door snel taken te verdelen en helder te communiceren konden we tegelijk aan dezelfde code werken en dit makkelijk samenvoegen.<br>
-                <br>
-                Daarnaast verbaasde het me hoeveel je kunt bereiken zonder JavaScript. Door de technieken die we bij verschillende vakken hebben geleerd, kan ik nu al behoorlijk wat (interactieve) onderdelen bouwen, puur met HTML en CSS.<br>
-                <br>
-                Tot slot merk ik hoe snel je nieuwe technieken oppikt en inziet waar je die allemaal voor kunt gebruiken.
-            </p>
-        </section>
+      <section class="reflectie">
+        <h2>Reflectie</h2>
+        <h3>Hoe gaat het tot nu toe</h3>
+        <p>
+          Tijdens de minor ben ik tot nu toe al enorm gegroeid. Ik zie veel
+          vooruitgang in hoe snel ik nieuwe technieken oppak en deze kan
+          toepassen in mijn projecten. Zo heb ik mijn doel om 3D in web
+          development toe te passen op meerdere manieren kunnen realiseren. Ook
+          heb ik meer inzicht gekregen in waar ik nu sta en welke vaardigheden
+          ik inmiddels beheers.
+        </p>
 
+        <h3>Mijn leermomenten</h3>
+        <p>
+          Mijn grootste leermoment was hoe goed samenwerking kan verlopen als je
+          vanaf het begin georganiseerd werkt. Door snel taken te verdelen en
+          helder te communiceren konden we tegelijk aan dezelfde code werken en
+          dit makkelijk samenvoegen.<br />
+          <br />
+          Daarnaast verbaasde het me hoeveel je kunt bereiken zonder JavaScript.
+          Door de technieken die we bij verschillende vakken hebben geleerd, kan
+          ik nu al behoorlijk wat (interactieve) onderdelen bouwen, puur met
+          HTML en CSS.<br />
+          <br />
+          Tot slot merk ik hoe snel je nieuwe technieken oppikt en inziet waar
+          je die allemaal voor kunt gebruiken.
+        </p>
+      </section>
+
+      <section class="meesterproef-reflectie">
+        <h2>Reflectie Meesterproef</h2>
+        <p>
+          Terugkijkend op dit project ben ik over het algemeen tevreden over hoe
+          het is verlopen. Hoewel ik niet op elk leerdoel zoveel focus heb
+          kunnen leggen als ik had gewild (door tijdsdruk of mijn rol binnen het
+          team) heb ik wel mijn best gedaan om het eindproduct van ons team
+          voorop te stellen. De samenwerking verliep over het algemeen prettig.
+          We wisten goed te communiceren en stemden onderling af wie wat
+          oppakte. Het eindproduct is niet perfect, maar ik ben toch enigzins
+          trots op wat we samen hebben neergezet, zeker omdat de opdracht niet
+          altijd even duidelijk was.
+        </p>
+
+        <h3>Leerdoelen</h3>
+        <h4>Gestructureerd en professioneel werken</h4>
+        <p>
+          Dit leerdoel heb ik grotendeels behaald. In het begin stelde ik voor
+          om GitHub Projects te gebruiken voor de planning en stelde ik
+          duidelijke codeconventies op, waarmee we gestructureerd konden
+          starten. Hoewel GitHub Projects al in week 2 verwaterde doordat we
+          dagelijks op het whiteboard de taakverdeling voor die dag of week
+          noteerden, verliep de samenwerking op deze manier alsnog goed. Wat
+          betreft de variabelen en conventies merkte ik dat dit deels werd
+          opgepakt, maar niet altijd consistent werd toegepast. Daar had ik
+          misschien meer op kunnen aandringen, al hielp het ook niet dat we
+          regelmatig van ontwerp wisselden. Voor mijzelf hielp het in ieder
+          geval om overzicht te houden in mijn eigen werk.
+        </p>
+
+        <h4>JavaScript beter begrijpen en bewust gebruiken</h4>
+        <p>
+          Ook al heb ik bij dit project niet veel gebruik gemaakt van JavaScript
+          (als je GSAP niet mee telt), omdat dat niet specifiek onder mijn
+          verantwoordelijkheden viel (op een kleine CodePen met de Geolocation
+          web API na) heb ik wel een duidelijke groei gemaakt. Ik heb tijdens
+          dit project vrijwel geen AI gebruikt voor het schrijven van mijn code,
+          en ben bewust zelf aan de slag gegaan. Hierdoor begreep ik mijn code
+          beter en kon ik hierna ook beter mijn teamgenoten helpen met gsap.
+        </p>
+
+        <h4>Animeren met GSAP</h4>
+        <p>
+          Dit leerdoel vind ik zelf het sterkst behaald. Door de workshops, het
+          opzoeken van extra bronnen en vooral door veel zelf te experimenteren
+          in CodePen, heb ik veel geleerd over GSAP. Ik ben tevreden met hoe ik
+          GSAP heb kunnen inzetten voor de animaties. Al ben ik er, mede door de
+          feedback van docenten, ook achter gekomen dat GSAP zeker niet altijd
+          de beste keuze is. In de toekomst zou ik eerder kiezen voor een
+          CSS-first aanpak en GSAP alleen gebruiken voor specifieke technieken
+          zoals morphing, wanneer dat niet goed met CSS te behalen is.
+        </p>
+      </section>
     </main>
 
     <footer>©Joost Locher</footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
