@@ -656,6 +656,61 @@
           </ul>
         </div>
 
+        <div popover id="erik">
+          <h2>Erik Kroes</h2>
+          <ul class="nerd-container">
+            <li>
+              <div>
+                <h3>Samenvatting</h3>
+                <p>
+                  Toegankelijkheid gaat over ervoor zorgen dat iedereen je
+                  website kan gebruiken, ook mensen met een beperking. Kleine
+                  aanpassingen kunnen al veel verschil maken. <br /><br />
+                  Goede HTML is de basis. Gebruik semantische elementen zoals
+                  button, a, nav en vermijd het gebruiken van divs voor
+                  interactieve elementen.
+                  <br /><br />
+                  Voor de keyboard zijn veelvoorkomende problemen: geen skip
+                  link, foutieve focus states, lage kleurcontrasten en
+                  onduidelijke placeholders. Labels horen boven inputvelden te
+                  staan.
+                  <br /><br />
+                  Contrast is belangrijk, zeker in fel licht. Voor gewone tekst
+                  is minimaal 4.5:1 nodig, voor grote tekst 3:1.
+                  <br /><br />
+                  Alternatieven zoals captions, transcripts en goede alt-teksten
+                  maken content toegankelijker. Let ook op afbeeldingen in
+                  buttons en video’s zonder ondertiteling.
+                  <br /><br />
+                  Test niet alleen met tools, maar ook met het toetsenbord en
+                  een screenreader. Zorg dat je site werkt op kleine schermen en
+                  dat tekst schaalbaar is.
+                  <br /><br />
+                  Je kunt veel bereiken zonder JavaScript, als je HTML en CSS
+                  slim inzet.
+                </p>
+              </div>
+              <div>
+                <h3>Mening</h3>
+                <p>
+                  Heel veel van deze informatie die hij had vertelde wist ik al,
+                  wat natuurlijk heel goed is dat wij dat al hebben geleerd en
+                  kunnen toepassen. Maar er zijn nogsteeds veel mensen die
+                  hiervan kunnen leren, en altijd goed bij elk project hier wat
+                  tijd in te steken. Ik hoop dit dan ook voor de Meesterproef te
+                  doen.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="images/erik_kroes.webp" alt="erik kroes" />
+            </li>
+            <li>
+              <p>WCAG - Accessibility Fixes</p>
+            </li>
+          </ul>
+        </div>
+
         <div popover id="dave">
           <h2>Dave Bitter</h2>
 
@@ -664,13 +719,35 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Dave Bitter (iO) liet zien hoe je spraakherkenning en AI
+                  combineert tot toegankelijke voice-interfaces in het project
+                  PresiParrot. <br />
+                  <br />
+                  Hij toonde hoe de Web Speech API en Speech Synthesis API samen
+                  met ChatGPT en ElevenLabs zorgen voor een AI die live spraak
+                  omzet naar tekst én terugpraat. Door audio te splitsen en data
+                  slim op te halen, wordt de interactie sneller en
+                  realistischer. <br />
+                  <br />
+                  Tools zoals useSpeechRecognition en useSpeechSynthesis maken
+                  het bouwen eenvoudiger. Animaties (zoals “luistert” of
+                  “praat”) geven extra feedback en persoonlijkheid aan de
+                  interface. <br />
+                  <br />
+                  Belangrijke boodschap: spraak is een natuurlijke manier van
+                  interactie en AI is meer dan een gimmick, het is een bruikbare
+                  datastructuur. Gewoon bouwen dus, en niet blijven hangen in
+                  alleen ideeën.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Het was tof om te zien hoe je "vrij simple" met een Web Speech
+                  API en AI samen een spraak bot kan neerzetten. Tijdens de
+                  vakken door ben ik er ook achter gekomen wat Web API zijn en
+                  hoe je deze ook goed en leuk kan toepassen. Dit wil ik dan ook
+                  zeker meenemen en hier vaker naar te kijken.
                 </p>
               </div>
             </li>
@@ -678,7 +755,7 @@
               <img src="images/dave_bitter.jpeg" alt="dave bitter" />
             </li>
             <li>
-              <p>...</p>
+              <p>The Rise of AI-Powered Voice Interfaces</p>
             </li>
           </ul>
         </div>
@@ -691,13 +768,40 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Steve Jonk liet zien hoe hij een Twitter-follow-bot bouwde
+                  voor een OnlyFans-klant, met als doel automatisch relevante
+                  accounts te volgen en zo bereik te vergroten. <br /><br />
+                  Omdat de Twitter API veel beperkingen heeft (zoals een actie
+                  per 10 minuten en beperkte toegang tot data), koos hij voor
+                  een alternatieve aanpak: scraping via Puppeteer. Daarmee
+                  simuleerde hij het gedrag van een echte gebruiker inclusief
+                  inloggen, scrollen en klikken. <br /><br />
+                  Om dit goed te laten werken gebruikte hij een combinatie van
+                  tools: <br />
+                  – Puppeteer voor browserautomatisering <br />
+                  – n8n voor workflow-automatisering <br />
+                  – PostgreSQL voor dataopslag <br />
+                  – Docker en Ubuntu als serveromgeving (met Xvfb voor headless
+                  interface) <br /><br />
+                  Het systeem hield rekening met "menselijk gedrag" door random
+                  pauzes en foutafhandeling in te bouwen. Bij API-fouten wachtte
+                  de bot een willekeurige tijd en probeerde het opnieuw.
+                  <br /><br />
+                  Hoewel het project technisch sterk in elkaar zat, kwam ook de
+                  ethische kant aan bod. Scraping is effectief, maar brengt
+                  risico's met zich mee op het gebied van privacy en
+                  platformregels. Toch maakte Steve vooral duidelijk hoeveel je
+                  kunt bereiken met slimme automatisering, zelfs als officiële
+                  API's je beperken.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Op ethische gebied was ik het nou niet helemaal met hem eens
+                  wat hij deed, maar ik vond het toch leuk om te zien hoe je dit
+                  soort functies kan automatiseren. Ook de manier hoe hij de
+                  website onderzocht in inspecteer modes inspireerde mij.
                 </p>
               </div>
             </li>
@@ -705,7 +809,7 @@
               <img src="images/steve_jonk.jpeg" alt="steve jonk" />
             </li>
             <li>
-              <p>...</p>
+              <p>Twitter Follow Bot</p>
             </li>
           </ul>
         </div>
@@ -718,13 +822,33 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Clarke Verdel (Werkend voor Miele) deelde zijn aanpak voor
+                  gestructureerd testen van front-end code, gebaseerd op het
+                  “Testing Trophy” model. Hij benadrukte dat testen verder gaat
+                  dan alleen checken of iets werkt. Het gaat om vertrouwen in je
+                  interface, op elk apparaat, in elke taal en voor elk type
+                  gebruiker. <br /><br />
+                  De testingstrategie bestaat uit vier lagen: static tooling
+                  (zoals ESLint en TypeScript), component en unit tests (met
+                  tools als Vitest), integratietests en end to end tests (bv.
+                  met Cypress of Playwright). Hoe hoger in de piramide, hoe
+                  realistischer de test, maar ook duurder en trager.
+                  <br /><br />
+                  Testen moet slim ingezet worden: lichte checks voor simpele
+                  componenten, uitgebreidere testen voor complexe interacties.
+                  Denk aan responsiviteit, toegankelijkheid, performance en
+                  browsercompatibiliteit. Alles draait om het simuleren van
+                  echte gebruikerservaring — testen zoals je gebruikers
+                  gebruiken.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Het was een interessant inzicht hoe het testen van code werkt
+                  op een meer professioneele manier werkte. Hier had ik zelf nog
+                  niet zo bij stil gestaan dat dit zo uitgebreid kan en moet
+                  zijn.
                 </p>
               </div>
             </li>
@@ -732,7 +856,7 @@
               <img src="images/clarke_verdel.jpeg" alt="clarke verdel" />
             </li>
             <li>
-              <p>...</p>
+              <p>Slim Testen</p>
             </li>
           </ul>
         </div>
@@ -745,13 +869,26 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Q42 is een “nerdagency” die werkt aan inclusieve digitale
+                  producten zoals de websites van het Rijksmuseum en HEMA.
+                  Toegankelijkheid is voor hen standaard. Ze testen met echte
+                  gebruikers en bereiden zich voor op WCAG 2.1 en de Europese
+                  toegankelijkheidswet. <br /><br />
+                  In samenwerking met Visio ontwikkelden ze SenseMath, een app
+                  waarmee blinde leerlingen wiskunde leren via geluid. Grafieken
+                  worden hoorbaar gemaakt door toonhoogtes. Ook maakten ze een
+                  speciaal wiskundetoetsenbord met swipebediening. Hun
+                  boodschap: ontwerp vanaf het begin voor iedereen.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Q42 vond ik een erg leuke Weekly Nerd. De projecten die ze
+                  lieten zien, maar ook zeker de creatieve manier waarop zij
+                  projecten aanpakken, spraken me erg aan. Ik had hiervoor al
+                  eerder van Q42 gehoord, maar het was leuk om te zien hoe de
+                  sfeer daar op de werkvloer is.
                 </p>
               </div>
             </li>
@@ -759,7 +896,7 @@
               <img src="images/johan_huijkman.png" alt="johan huijkman" />
             </li>
             <li>
-              <p>...</p>
+              <p>Q42 "nerd-agency"</p>
             </li>
           </ul>
         </div>
@@ -771,13 +908,30 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Oculi Mundi is een online 3D-kunstcollectie van Sunderland,
+                  gemaakt zonder gebruik van WebGL. In plaats daarvan is er slim
+                  gebruikgemaakt van HTML en CSS, met technieken als
+                  transform-style: preserve-3d voor diepte en beweging. Beelden
+                  zijn haarscherp dankzij de integratie van Micl.io, waarmee
+                  gebruikers tot op detailniveau kunnen inzoomen op kunstwerken.
+                  <br /><br />
+                  Wat het project bijzonder maakt, is dat het ondanks de visuele
+                  complexiteit volledig toegankelijk is. Er is ondersteuning
+                  voor tabnavigatie, en er is rekening gehouden met
+                  prefers-reduced-motion voor gebruikers die bewegende elementen
+                  willen beperken. Een goed voorbeeld van hoe 3D en
+                  toegankelijkheid hand in hand kunnen gaan, zonder zware
+                  technologieën zoals WebGL.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Q42 vond ik een erg leuke Weekly Nerd. De projecten die ze
+                  lieten zien, maar ook zeker de creatieve manier waarop zij
+                  projecten aanpakken, spraken me erg aan. Ik had hiervoor al
+                  eerder van Q42 gehoord, maar het was leuk om te zien hoe de
+                  sfeer daar op de werkvloer is.
                 </p>
               </div>
             </li>
@@ -785,7 +939,7 @@
               <img src="images/marvin_sernee.jpg" alt="marvin sernee" />
             </li>
             <li>
-              <p>...</p>
+              <p>Q42 "nerd-agency"</p>
             </li>
           </ul>
         </div>
@@ -797,13 +951,36 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Toegankelijkheid gaat verder dan alleen permanente
+                  beperkingen. Marieke de Hoop liet zien dat ook tijdelijke of
+                  situationele beperkingen — zoals een gebroken arm of fel
+                  zonlicht — invloed hebben op hoe mensen digitale producten
+                  gebruiken. Iedereen kan dus te maken krijgen met
+                  ontoegankelijke interfaces.<br /><br />
+                  Ze gaf een inkijk in haar werk als toegankelijkheidsexpert,
+                  waaronder audits volgens WCAG-richtlijnen, adviestrajecten en
+                  trainingen voor organisaties als ASR. Tools zoals Stylus,
+                  Colour Contrast Checker en Stark helpen bij het opsporen van
+                  toegankelijkheidsproblemen. <br /><br />
+                  Belangrijk onderdeel van haar talk was de aankomende European
+                  Accessibility Act (EAA), die op 28 juni 2025 ingaat. Bedrijven
+                  die aan consumenten in de EU leveren, moeten dan voldoen aan
+                  digitale toegankelijkheidsrichtlijnen. Uitzonderingen gelden
+                  alleen voor kleine ondernemingen. Toezicht ligt bij instanties
+                  als de ACM en AFM, en boetes kunnen oplopen tot 20 miljoen
+                  euro. <br /><br />
+                  De boodschap was duidelijk: toegankelijkheid is geen
+                  extraatje, maar een fundamenteel onderdeel van goed ontwerp én
+                  wettelijk verplicht.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Dit was weer een Weekly Nerd over toegankelijkheid, dus ik
+                  wist al veel van wat zij vertelde. Toch werd het me extra
+                  duidelijk dat hier tijdens en na mijn opleiding al veel meer
+                  aandacht naartoe gaat dan voorheen.
                 </p>
               </div>
             </li>
@@ -811,7 +988,7 @@
               <img src="images/marieke_hoop.png" alt="marieke de hoop" />
             </li>
             <li>
-              <p>...</p>
+              <p>Digitale Toegankelijkheid</p>
             </li>
           </ul>
         </div>
@@ -823,13 +1000,34 @@
               <div>
                 <h3>Samenvatting</h3>
                 <p>
-                  ...
+                  Miriam sprak over hoe het web ooit begon als een platform voor
+                  tekst en publiek onderzoek, bedoeld voor openheid en
+                  kennisdeling. Tegenwoordig is het veel visueler, interactiever
+                  en commercieel ingesteld. Ze zette aan tot nadenken: voor wie
+                  is het web eigenlijk gemaakt? <br /><br />
+                  Ze legde uit dat webdesign nooit af is. De gebruiker blijft
+                  altijd invloed houden, bijvoorbeeld via voorkeuren of
+                  instellingen. Daarbij benadrukte ze dat je niet moet ontwerpen
+                  voor "de gemiddelde gebruiker", maar juist rekening moet
+                  houden met diversiteit. <br /><br />
+                  De cascade in CSS werd besproken als een krachtig principe dat
+                  flexibiliteit mogelijk maakt in plaats van rigide controle. Ze
+                  riep op om het web te zien als een gedeeld platform dat de
+                  gebruiker centraal stelt, niet de ontwerper. <br /><br />
+                  Ook benoemde ze dat technologie nooit neutraal is. Elke tool
+                  draagt ideeën en keuzes met zich mee. Daarom is het belangrijk
+                  om je bewust te zijn van de maatschappelijke impact van hoe en
+                  wat we bouwen op het web.
                 </p>
               </div>
               <div>
                 <h3>Mening</h3>
                 <p>
-                  ...
+                  Om eerlijk te zijn vond ik dit een van de minder goede Weekly
+                  Nerds, omdat ze in een rap tempo van het een naar het ander
+                  gingen, waardoor er geen duidelijk verhaal ontstond. Daardoor
+                  heb ik, ook omdat ik die dag wat gaar was, alles moeilijk
+                  kunnen volgen.
                 </p>
               </div>
             </li>
@@ -837,7 +1035,7 @@
               <img src="images/miriam_suzanne.png" alt="miriam suzanne" />
             </li>
             <li>
-              <p>..</p>
+              <p>Pre CSS Day</p>
             </li>
           </ul>
         </div>
